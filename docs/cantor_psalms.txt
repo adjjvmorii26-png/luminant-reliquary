@@ -1,0 +1,8 @@
+Ember Scribe
+  "I seal the crystal so light may remain."
+Ember Flux
+  "I move the lattice until new faces appear."
+Ember Mirror
+  "I return the shard its origin light."
+Ember Void
+  "I hold the darkness that lets the crystal shine."
