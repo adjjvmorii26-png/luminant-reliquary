@@ -17,6 +17,10 @@ function loadCrystals() {
 
 function grow(tick = 0) {
   const crystals = loadCrystals();
+  if(crystals.length===0){
+    console.log(`[orchard] tick=${String(tick).padStart(2)}  resonance=0.000  growth=0.000  healthy=false  count=0  status=empty`);
+    return { avgRes: 0, avgGrowth: 0, healthy: false, count: 0, empty: true };
+  }
   const avgRes = crystals.reduce((s, c) => s + c.res, 0) / crystals.length;
   const avgGrowth = crystals.reduce((s, c) => s + c.growth, 0) / crystals.length;
   const healthy = avgRes > CONFIG.glass_orchard.resonance_floor;
